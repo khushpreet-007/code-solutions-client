@@ -37,7 +37,7 @@ function getTimeAgo(timestamp) {
     }
   }
 
-const url = "http://localhost:4000/api"; 
+const url = "https://codehorses.onrender.com/api"; 
 
 class Announcement extends React.Component{
 

@@ -3,7 +3,7 @@ import axios from "axios";
 import {withRouter} from "react-router-dom";
 // import '../styles/Register.css';
 
-const url = "http://localhost:4000/api";
+const url = "https://codehorses.onrender.com/api";
 
 
 
