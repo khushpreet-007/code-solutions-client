@@ -35,7 +35,7 @@ class Login extends React.Component{
       });
       // console.log(response);
       // document.clearCookie("accessToken");
-      document.cookie = `accessToken=${response.data.accessToken}`
+      // document.cookie = `accessToken=${response.data.accessToken}`
       history.push(`/profile/${this.state.username}`, {message: response.data});
     }
     catch(err){
