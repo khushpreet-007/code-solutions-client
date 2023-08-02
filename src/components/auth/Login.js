@@ -48,7 +48,7 @@ class Login extends React.Component{
     // console.log(this.props);
     setTimeout(()=>{
       this.setState({message: ""});
-    }, 5000);
+    }, 20000);
   }
 
   render(){
