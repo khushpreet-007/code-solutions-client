@@ -3,7 +3,7 @@ import axios from "axios";
 import {withRouter} from "react-router-dom";
 // import '../styles/Register.css';
 
-const url = "https://codeforces.ignorelist.com/api";
+const url = "https://codeserver.us.to/api";
 
 
 

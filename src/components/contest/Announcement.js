@@ -37,7 +37,7 @@ function getTimeAgo(timestamp) {
     }
   }
 
-const url = "https://codeforces.ignorelist.com/api"; 
+const url = "https://codeserver.us.to/api"; 
 
 class Announcement extends React.Component{
 

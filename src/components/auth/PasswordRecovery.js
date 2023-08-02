@@ -4,7 +4,7 @@ import {withRouter, Link} from "react-router-dom";
 import Loader from '../Loader';
 
 
-const url = "https://codeforces.ignorelist.com/api";
+const url = "https://codeserver.us.to/api";
 
 class PasswordRecovery extends React.Component{
 

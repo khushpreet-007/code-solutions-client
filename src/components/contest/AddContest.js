@@ -2,7 +2,7 @@ import React from 'react';
 import axios from "axios";
 import {withRouter, Link} from "react-router-dom";
 
-const url = "https://codeforces.ignorelist.com/api";
+const url = "https://codeserver.us.to/api";
 
 class AddContest extends React.Component{
 

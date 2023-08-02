@@ -2,7 +2,7 @@ import React from 'react';
 import axios from "axios";
 import {withRouter, Link} from "react-router-dom";
 
-const url = "https://codeforces.ignorelist.com/api";
+const url = "https://codeserver.us.to/api";
 
 class Login extends React.Component{
 
@@ -35,7 +35,7 @@ class Login extends React.Component{
       });
       // console.log(response);
       // document.clearCookie("accessToken");
-      document.cookie = `accessToken=${response.data.accessToken}; max-age=3600000; secure; samesite=none; domain=codehorses.onrender.com; path=/`;
+      document.cookie = `accessToken=${response.data.accessToken}; max-age=3600000; secure; samesite=none; domain=.us.to; path=/`;
       // document.cookie = `accessToken=${response.data.accessToken}`;
       history.push(`/profile/${this.state.username}`, {message: response.data});
     }

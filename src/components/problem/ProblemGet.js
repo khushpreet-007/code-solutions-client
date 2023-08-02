@@ -4,7 +4,7 @@ import Editor from "@monaco-editor/react";
 import {withRouter, Link} from "react-router-dom";
 import Loader from "../Loader";
 
-const url = "https://codeforces.ignorelist.com/api";
+const url = "https://codeserver.us.to/api";
 
 const dictionary = {
     "javascript" : 93,
