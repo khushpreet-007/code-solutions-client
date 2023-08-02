@@ -53,7 +53,7 @@ class Navbar extends React.Component{
             const response = await axios.get(`${url}/logout`,{
                 withCredentials: true
             })
-            document.cookie = `accessToken=dummy; max-age=3600000; secure; samesite=none; domain=.us.to; path=/`;
+            document.cookie = `accessToken=; max-age=3600000; secure; samesite=none; domain=.us.to; path=/`;
             history.push('/login', {message: response.data});
         }
         catch(err){
