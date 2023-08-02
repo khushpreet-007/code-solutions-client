@@ -4,7 +4,7 @@ import {v4 as uuid} from "uuid";
 import {withRouter, Link} from "react-router-dom";
 import CountdownTimer from '../CountdownTimer';
 
-const url = "https://codehorses.onrender.com/api"; 
+const url = "https://codeforces.ignorelist.com/api"; 
 
 class Home extends React.Component{
 

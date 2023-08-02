@@ -3,7 +3,7 @@ import axios from "axios";
 import Navbar from "../Navbar"
 import {withRouter, Link} from "react-router-dom";
 
-const url = "https://codehorses.onrender.com/api";
+const url = "https://codeforces.ignorelist.com/api";
 
 function getTimeAgo(timestamp) {
   // console.log(timestamp);
