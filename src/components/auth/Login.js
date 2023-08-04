@@ -48,14 +48,14 @@ class Login extends React.Component{
     // console.log(this.props);
     setTimeout(()=>{
       this.setState({message: ""});
-    }, 20000);
+    }, 5000);
   }
 
   render(){
     return (
       <div className='login d-flex flex-column align-items-center'>
         {this.state.message?(<div className='alert alert-primary' style={{width: "100%", textAlign: "center"}}>{this.state.message}</div>):""}
-        <div className='alert alert-warning' style={{width: "100%", textAlign: "center"}}>The requests other than GET are intentionally refused for now, you are only permitted to view the website. Only login is priviledged to use POST method. Use username=abhishek & password=deathnote for authentication.</div>
+        {/* <div className='alert alert-warning' style={{width: "100%", textAlign: "center"}}>The requests other than GET are intentionally refused for now, you are only permitted to view the website. Only login is priviledged to use POST method. Use username=abhishek & password=deathnote for authentication.</div> */}
         <h2 className='mt-5'>Login</h2>
         <form action="/login" className='username form d-flex flex-column align-items-center my-4 row container-xxs' onSubmit={this.handleSubmit}>
           <div className='username col-md-12 my-1'>
