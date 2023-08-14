@@ -72,9 +72,9 @@ class Home extends React.Component{
         array.push({hr, mn, sc});
     }
     return (
-      <div className='home d-flex justify-content-center flex-column'>
+      <div className='home d-flex flex-column align-items-center'>
                 {this.state.message?(<div className='alert alert-primary'>{this.state.message}</div>):""}
-        <h2 className='my-4 heading mx-2'>Home</h2>
+        <h2 className='my-4 heading mx-2 align-self-start'>Home</h2>
         {this.state.callingAPI?
         <Loader />:<div></div>}
         {this.state.contests.map((contest,idx)=>{
