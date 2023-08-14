@@ -72,7 +72,7 @@ class Home extends React.Component{
         array.push({hr, mn, sc});
     }
     return (
-      <div className='home d-flex justify-content-center'>
+      <div className='home d-flex justify-content-center flex-column'>
                 {this.state.message?(<div className='alert alert-primary'>{this.state.message}</div>):""}
         <h2 className='my-4 heading mx-2'>Home</h2>
         {this.state.callingAPI?
