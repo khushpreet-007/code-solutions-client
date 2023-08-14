@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from "axios";
+import Loader from '../Loader';
 import {v4 as uuid} from "uuid";
 import {withRouter, Link} from "react-router-dom";
 import CountdownTimer from '../CountdownTimer';
@@ -13,6 +14,7 @@ class Home extends React.Component{
     this.state = {
       message: this.props.location.state?.message,
       contests: [],
+      callingAPI: true,
     }
   }
 
@@ -44,7 +46,7 @@ class Home extends React.Component{
         });
         // console.log("hello");
         // console.log(response);
-        this.setState({contests: response.data.contests});
+        this.setState({contests: response.data.contests, callingAPI: false});
         }
     catch(err){
         const {history} = this.props;
@@ -73,6 +75,8 @@ class Home extends React.Component{
       <div className='home'>
                 {this.state.message?(<div className='alert alert-primary'>{this.state.message}</div>):""}
         <h2 className='my-4 heading mx-2'>Home</h2>
+        {this.state.callingAPI?
+        <Loader />:<div></div>}
         {this.state.contests.map((contest,idx)=>{
             return (
             <div className='m-2 bg-light'>
