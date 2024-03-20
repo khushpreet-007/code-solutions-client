@@ -4,7 +4,8 @@ import Editor from "@monaco-editor/react";
 import {withRouter, Link} from "react-router-dom";
 import Loader from "../Loader";
 
-const url = "https://codeserver.us.to/api";
+// const url = "https://codeserver.us.to/api";
+const url = "http://localhost:4000/api";
 
 const dictionary = {
     "javascript" : 93,

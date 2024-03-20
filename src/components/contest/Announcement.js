@@ -37,7 +37,8 @@ function getTimeAgo(timestamp) {
     }
   }
 
-const url = "https://codeserver.us.to/api"; 
+const url = "http://localhost:4000/api";
+
 
 class Announcement extends React.Component{
 

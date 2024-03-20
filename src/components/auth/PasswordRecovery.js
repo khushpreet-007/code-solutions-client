@@ -4,7 +4,8 @@ import {withRouter, Link} from "react-router-dom";
 import Loader from '../Loader';
 
 
-const url = "https://codeserver.us.to/api";
+const url = "http://localhost:4000/api";
+
 
 class PasswordRecovery extends React.Component{
 

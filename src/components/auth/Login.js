@@ -2,7 +2,7 @@ import React from 'react';
 import axios from "axios";
 import {withRouter, Link} from "react-router-dom";
 
-const url = "https://codeserver.us.to/api";
+const url = "http://localhost:4000/api";
 
 class Login extends React.Component{
 

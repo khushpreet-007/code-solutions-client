@@ -3,9 +3,7 @@ import axios from "axios";
 import {withRouter} from "react-router-dom";
 // import '../styles/Register.css';
 
-const url = "https://codeserver.us.to/api";
-
-
+const url = "http://localhost:4000/api";
 
 class Register extends React.Component{
 

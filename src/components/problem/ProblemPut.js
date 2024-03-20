@@ -2,7 +2,7 @@ import React from 'react';
 import axios from "axios";
 import {withRouter, Link} from "react-router-dom";
 
-const url = "https://codeserver.us.to/api";
+const url = "http://localhost:4000/api";
 
 const possibleTags = ['greedy', 'dp', 'trees', 'graphs', 'number theory',
 'maths', 'brute force', 'implementation', 'backtracking', 'dsu',

@@ -3,7 +3,7 @@ import axios from "axios";
 import Navbar from "../Navbar"
 import {withRouter, Link} from "react-router-dom";
 
-const url = "https://codeserver.us.to/api";
+const url = "http://localhost:4000/api";
 
 function getTimeAgo(timestamp) {
   // console.log(timestamp);

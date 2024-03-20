@@ -5,7 +5,7 @@ import {v4 as uuid} from "uuid";
 import {withRouter, Link} from "react-router-dom";
 import CountdownTimer from '../CountdownTimer';
 
-const url = "https://codeserver.us.to/api"; 
+const url = "http://localhost:4000/api";
 
 class Home extends React.Component{
 
